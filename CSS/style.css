@@ -1,0 +1,656 @@
+body{
+    margin: 0;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E8F8FC;
+}
+@font-face {
+    font-family: "Karma";
+    src: url("/Karma-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Kdam";
+    src: url("/KdamThmor-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: "LaoMuang";
+  src: url("/LaoMuangDon-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+    height: 70px;
+    text-align: center;
+    background-color: #69C9E4;
+    color: #374043;
+    font-size: 25px;
+    display: flex;
+    font-family: Kdam;
+    text-shadow: 1px 0px #374043;
+    overflow: visible;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #374043;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #649CAC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #profilepic{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border:10px solid #69C9E4; 
+    float: right;
+    z-index: 20;
+    overflow: clip;
+    object-fit: cover;
+  }
+  #logo{
+    max-width: 100%;
+    margin-left: 20px;
+    max-height: 70px;
+  }
+  
+.backgroundcolorhome{
+    background-image: url("/Images/mountain.png");
+    background-size: contain ;
+    background-position-y: 550px;
+    background-repeat: no-repeat;
+    background-color: #A2DCED;
+    min-height: 210vh;
+}
+.header > .headermenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-inline: auto;
+}
+.banner{
+    background-color: #649CAC;
+    height: 250px;
+    z-index: 2;
+    align-items: center;
+  }
+ 
+  #wlcmtxt{
+    color: white;
+    text-align: center;
+   font-family: Karma;
+   display: flex;
+   font-size: 50px;
+   z-index: 2;
+   align-items: center;
+  }
+  #est{
+    color: white;
+    font-family: Karma;
+    font-size: 25px;
+    z-index: 3;
+    align-items: center;
+  }
+  .banner-text{
+    margin-left: 10rem;
+  }
+
+  .hpbutton{
+    /* width: 500px;
+    height: 400px; */
+    background-color: #649CAC;
+    border-radius: 45px;
+    opacity: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: clip;
+    box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+    max-width: 332px;
+    max-height: 420px;
+    min-width: 332px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 200px;
+    animation-range-end: cover 500px;
+
+  }
+  .hpbuttontitle{
+    color: white;
+    font-family: LaoMuang;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 2px #374043;
+    margin: 20px;
+  }
+  #gamesbutton{
+    max-width: 332px;
+    max-height: 420px;
+  }
+  .gameicons{
+    max-width: 100%;
+    min-height: 89.45px;
+  }
+  .gamediv{
+    opacity: 100%;
+    /* border-bottom-left-radius:10px; */
+    transition: 1s;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  
+
+  
+  .gamediv:hover{
+    opacity: 60%;
+  }
+  
+ .ovlytxt{
+  color: black;
+  font-size: 30px;
+  opacity: 0%;
+  margin-top: -250px;
+  width: 250px;
+  margin-left: 20px;
+  font-family: LaoMuang;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  translate: -50% -50%;
+ }
+  
+  .hpmenu {
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-inline: 5rem;
+    place-items: center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+  .hpmenu2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-inline: 10rem;
+    place-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .forumpost{
+    width:fit-content;
+    height: 80px;
+    background-color: #E8F8FC;
+    text-align: center;
+    
+    border-bottom: 1px solid #899EA4;
+    margin-top: 0px;
+  }
+  .forumtext{
+    color: #374043;
+    font-family: LaoMuang;
+    font-size: 20px;
+    display: block;
+    margin-top: 0;
+  }
+  #bentforum{
+    border-bottom-left-radius:45px;
+    border-bottom-right-radius:45px;
+  }
+  .friendsdiv{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #E8F8FC;
+    border-bottom: 1px solid #899EA4;
+    margin-top: 0px;
+    position: relative;
+  }
+  .pfpics{
+    width: 70px;
+    height: 70px;
+  }
+  .friendsnames{
+    color: #374043;
+    font-family: LaoMuang;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+  }
+  .online-status{
+    color: #374043;
+    font-family: LaoMuang;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  .chat-icon{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+  }
+  #bentfriends{
+    border-bottom-left-radius:45px;
+    border-bottom-right-radius:45px;
+  }
+  .hp-chat{
+    color: #374043;
+    font-family: LaoMuang;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+
+.pfp-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+  .pfp-wrapper::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: attr(notifications);
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Kdam;
+    font-size: 10px;
+  }
+
+  footer{
+    background-color: #899EA4;
+    height: 80px;
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-grow: 1;
+  }
+
+  .footer-setting{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: auto;
+   
+  }
+
+  
+  #settings-head-text{
+    color: #374043;
+    font-family: Kdam;
+    font-size: 50px;
+    margin-left: 4rem;
+  }
+ .footerdiv{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+ }
+ #setting-underline{
+  width: 1800px;
+  margin-left: 4rem;
+  height: 7px;
+  background-color: #374043;
+  border-radius: 20px;
+  margin-top: -40px;
+ }
+ 
+ .mp-text{
+  color: #374043;
+    font-family: Kdam;
+    font-size: 40px;
+    margin-left: 9%;
+ }
+ .slideanim {
+  visibility:hidden;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 1s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
+.big-games-icons{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+  object-fit: cover;
+}
+.big-games{
+  max-width: 1300px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  display: grid;
+  /* background-color: #899EA4; */
+  margin-inline: auto;
+ }
+/* @media only screen and (max-width: 1300px){
+  .big-games-icons{
+    width: 320px;
+    height: 320px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+    object-fit: cover;
+  }
+  .big-games{
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+    height: auto;
+    display: grid;
+    background-color: #899EA4; 
+    margin-left: 5%;
+   }
+  .header {
+    height: 100px;
+    text-align: center;
+    background-color: #69C9E4;
+    color: #374043;
+    font-size: 35px;
+    display: flex;
+    font-family: Kdam;
+    text-shadow: 1px 0px #374043;
+    overflow: visible;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #374043;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #649CAC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #profilepic{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border:15px solid #69C9E4; 
+    float: right;
+    z-index: 20;
+    overflow: clip;
+    object-fit: cover;
+  }
+  #logo{
+    width: 270px;
+    margin-left: 20px;
+  }
+  
+.backgroundcolorhome{
+    background-image: url("/Images/mountain.png");
+    background-size: contain ;
+    background-position-y: 500px;
+    background-repeat: no-repeat;
+    background-color: #A2DCED;
+}
+.header > .headermenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 170px;
+    margin-inline: auto;
+}
+  
+
+} */
+ @media only screen and (max-width: 950px){
+  .big-games{
+    width: 80vw;
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+    display: grid;
+    margin-left: 5%;
+  }
+  .big-games-icons{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+    object-fit: cover;
+  }
+    .header {
+      height: 100px;
+      text-align: center;
+      background-color: #69C9E4;
+      color: #374043;
+      font-size: 35px;
+      display: flex;
+      font-family: Kdam;
+      text-shadow: 1px 0px #374043;
+      overflow: visible;
+    }
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: #374043;
+      cursor: pointer;
+    }
+    
+    .hover-underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 7px;
+      bottom: 0;
+      left: 0;
+      background-color: #649CAC;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    #profilepic{
+      display: none;
+    }
+    #logo{
+      width: 270px;
+      margin-left: 20px;
+    }
+    
+  .backgroundcolorhome{
+      background-image: url("/Images/mountain.png");
+      background-size: contain ;
+      background-position-y: 500px;
+      background-repeat: no-repeat;
+      background-color: #A2DCED;
+  }
+  .header > .headermenu {
+    display: none;
+  }
+  
+
+}
+
+
+@media (max-width: 750px){
+  body{
+    margin: 0;
+    min-height: 250vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E8F8FC;
+}
+  .big-games{
+  width: 90%;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  display: grid;
+  margin-left: 5%;
+}
+.big-games-icons{
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+  object-fit: cover;
+}
+  .header {
+    height: 100px;
+    text-align: center;
+    background-color: #69C9E4;
+    color: #374043;
+    font-size: 35px;
+    display: flex;
+    font-family: Kdam;
+    text-shadow: 1px 0px #374043;
+    overflow: visible;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #374043;
+    cursor: pointer;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 7px;
+    bottom: 0;
+    left: 0;
+    background-color: #649CAC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #profilepic{
+    display: none;
+  }
+  #logo{
+    max-width: 100%;
+    margin-left: 20px;
+    max-height: 70px;
+  }
+  
+.backgroundcolorhome{
+    background-image: url("/Images/mountain.png");
+    background-size: contain ;
+    background-position-y: 500px;
+    background-repeat: no-repeat;
+    background-color: #A2DCED;
+}
+.header > .headermenu {
+  display: none;
+}
+
+}
+
+
+ .game-banner{
+  background-color: #649CAC;
+    height: 300px;
+    z-index: 2;
+    display: flex;
+    grid-area: auto;
+ }
+.game-banner-icon{
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  margin: 2%;
+  margin-left: 3%;
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+  object-fit: cover;
+  z-index: 10;
+}
+.game-name{
+  color: white;
+    text-align: center;
+   font-family: Karma;
+   font-size: 40px;
+   z-index: 20;
+  margin-left: 5rem;
+  float: left;
+}
+.game-description-text{
+  color: white;
+    text-align: center;
+   font-family: Karma;
+   font-size: 15px;
+   width: 750px;
+   z-index: 20;
+  margin-left: 5rem;
+  float: left;
+  text-align: left;
+}
