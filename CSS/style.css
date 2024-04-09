@@ -654,3 +654,59 @@ body{
   float: left;
   text-align: left;
 }
+.profile-page-pic{
+  height: 175px;
+  width: 175px;
+  border-radius: 100%;
+  object-fit: cover;
+  z-index: 10;
+  margin-left: 3%;
+  margin-top: 2%;
+  border: 10px solid #69C9E4;
+}
+.user-name{
+  color: white;
+    text-align: center;
+   font-family: Karma;
+   font-size: 40px;
+   z-index: 20;
+}
+.achievement-header{
+  color: #374043;
+    font-family: LaoMuang;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 2px white;
+    margin: 20px;
+}
+.playstation-logo{
+  max-width: 90%;
+  left: 0;
+  right: 0;
+}
+.ps-trophy-page{
+  height: 19rem;
+  background-color: #DAE6E9; 
+  align-items: center;
+  display: grid;
+  
+}
+#playstation-base{
+  background-color: white;
+  margin-left: 3rem;
+}
+.achievements{
+  width: 50px;
+  height: auto;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  
+}
+.achievement-text{
+  justify-content: space-between;
+}
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
