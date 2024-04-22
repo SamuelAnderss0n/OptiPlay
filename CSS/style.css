@@ -189,11 +189,12 @@ body{
     display: grid;
     max-width: 1300px;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding-inline: 5rem;
+    gap: 7rem;
+    padding-inline: 6rem;
     place-items: center;
     margin-top: 7rem;
     margin-bottom: 3rem;
+    place-self: center;
   }
   .hpmenu2 {
     display: grid;
