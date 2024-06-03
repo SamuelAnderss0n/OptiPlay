@@ -1,14 +1,22 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
         <link rel="stylesheet" href="CSS/style.css">
         <script src="float-panel.js"></script>
+        <script defer src="JS/script.js"></script>
+
     </head>
     <body class="backgroundcolorhome body">
         <div class="header">
-            <img id="logo" src="Images/logo.png" alt="logo">
+            <a href="/Homepage.html">
+                <img id="logo" src="Images/logo.png" alt="logo">
+            </a>
 
-            <div class="headermenu">
-                <a href="Games.html">
+            <nav class="nav">
+                <div class="headermenu">
+                    <a href="Games.html">
                     <p class="hover-underline-animation" id="games">Games</p>
                     </a>
                     <a href="Community.html">
@@ -17,10 +25,18 @@
                     <a href="Friends.html">
                     <p class="hover-underline-animation" id="friends">Friends</p>
                     </a>
-            </div>
-            <a href="Profile.html">
-                <img id="profilepic" src="Images/profilepicuser.jpg" alt="yourprofile">
+                </div>
+                <a href="Profile.html">
+                    <img id="profilepic" src="Images/profilepicuser.jpg" alt="yourprofile">
                 </a>
+            </nav>
+            <button class="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"/>
+                    <line x1="4" x2="20" y1="6" y2="6"/>
+                    <line x1="4" x2="20" y1="18" y2="18"/>
+                </svg>
+            </button>
           </div>
         <div class="banner"> 
           <div class="banner-text">
