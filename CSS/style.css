@@ -6,25 +6,11 @@ body{
     background-color: #E8F8FC;
 }
 @font-face {
-    font-family: "Karma";
-    src: url("/Karma-Bold.woff") format("woff");
+    font-family: "Inter";
+    src: url("/Inter-VariableFont_slnt\,wght.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-@font-face {
-    font-family: "Kdam";
-    src: url("/KdamThmor-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-  font-family: "LaoMuang";
-  src: url("/LaoMuangDon-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 .header {
     height: 70px;
@@ -33,7 +19,7 @@ body{
     color: #374043;
     font-size: 25px;
     display: flex;
-    font-family: Kdam;
+    font-family: Inter;
     text-shadow: 1px 0px #374043;
     overflow: visible;
   }
@@ -52,6 +38,7 @@ body{
     height: 7px;
     bottom: 0;
     left: 0;
+    top: 30;
     background-color: #649CAC;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -67,9 +54,9 @@ body{
     border-radius: 100px;
     border:10px solid #69C9E4; 
     float: right;
-    z-index: 20;
-    overflow: clip;
+    z-index: 999999;
     object-fit: cover;
+    position:sticky;
   }
   #logo{
     max-width: 100%;
@@ -91,6 +78,8 @@ body{
     justify-content: center;
     gap: 120px;
     margin-inline: auto;
+    
+    
 }
 .banner{
     background-color: #649CAC;
@@ -102,7 +91,7 @@ body{
   #wlcmtxt{
     color: white;
     text-align: center;
-   font-family: Karma;
+   font-family: Inter;
    display: flex;
    font-size: 50px;
    z-index: 2;
@@ -110,10 +99,11 @@ body{
   }
   #est{
     color: white;
-    font-family: Karma;
+    font-family: Inter;
     font-size: 25px;
     z-index: 3;
     align-items: center;
+    margin-top: -2rem;
   }
   .banner-text{
     margin-left: 10rem;
@@ -142,7 +132,7 @@ body{
   }
   .hpbuttontitle{
     color: white;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 45px;
     text-align: center;
     text-shadow: 2px 2px #374043;
@@ -178,7 +168,7 @@ body{
   margin-top: -250px;
   width: 250px;
   margin-left: 20px;
-  font-family: LaoMuang;
+  font-family: Inter;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -216,7 +206,7 @@ body{
   }
   .forumtext{
     color: #374043;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 20px;
     display: block;
     margin-top: 0;
@@ -233,6 +223,7 @@ body{
     border-bottom: 1px solid #899EA4;
     margin-top: 0px;
     position: relative;
+    
   }
   .pfpics{
     width: 70px;
@@ -240,17 +231,22 @@ body{
   }
   .friendsnames{
     color: #374043;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 25px;
     display: block;
     text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
   }
   .online-status{
     color: #374043;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 17px;
     display: block;
     text-align: center;
+    margin-top: 3rem;
+    margin-left: 5.5rem;
+    position: absolute;
   }
   .chat-icon{
     width: 50px;
@@ -263,7 +259,7 @@ body{
   }
   .hp-chat{
     color: #374043;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 17px;
     display: block;
     text-align: center;
@@ -289,7 +285,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Kdam;
+    font-family: Inter;
     font-size: 10px;
   }
 
@@ -314,29 +310,50 @@ body{
   
   #settings-head-text{
     color: #374043;
-    font-family: Kdam;
-    font-size: 50px;
-    margin-left: 4rem;
+    font-family: Inter;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .option-desc-text{
+    color: #374043;
+    font-family: Inter;
+    font-size: 30px;
+    margin-top: 3rem;
+  
+  }
+  .setting-button-icon{
+    width: 100px;
+  }
+  .option-buttons{
+    float: right;
+    margin-top: -5.5rem;
   }
  .footerdiv{
   position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-
  }
  #setting-underline{
-  width: 1800px;
-  margin-left: 4rem;
-  height: 7px;
+  height: 5px;
   background-color: #374043;
   border-radius: 20px;
-  margin-top: -40px;
+  align-self: center;
+   
+ }
+ .setting-div{
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  align-self: center;
  }
  
  .mp-text{
   color: #374043;
-    font-family: Kdam;
+    font-family: Inter;
     font-size: 40px;
     margin-left: 9%;
  }
@@ -370,6 +387,12 @@ body{
   border-radius: 30px;
   box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
   object-fit: cover;
+  opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 200px;
+    animation-range-end: cover 500px;
 }
 .big-games{
   max-width: 1300px;
@@ -379,249 +402,12 @@ body{
   /* background-color: #899EA4; */
   margin-inline: auto;
  }
-/* @media only screen and (max-width: 1300px){
-  .big-games-icons{
-    width: 320px;
-    height: 320px;
-    border-radius: 30px;
-    margin-bottom: 1rem;
-    box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
-    object-fit: cover;
-  }
-  .big-games{
-    width: 90%;
-    grid-template-columns: repeat(6, 1fr);
-    height: auto;
-    display: grid;
-    background-color: #899EA4; 
-    margin-left: 5%;
-   }
-  .header {
-    height: 100px;
-    text-align: center;
-    background-color: #69C9E4;
-    color: #374043;
-    font-size: 35px;
-    display: flex;
-    font-family: Kdam;
-    text-shadow: 1px 0px #374043;
-    overflow: visible;
-  }
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #374043;
-    cursor: pointer;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 7px;
-    bottom: 0;
-    left: 0;
-    background-color: #649CAC;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  #profilepic{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    border:15px solid #69C9E4; 
-    float: right;
-    z-index: 20;
-    overflow: clip;
-    object-fit: cover;
-  }
-  #logo{
-    width: 270px;
-    margin-left: 20px;
-  }
-  
-.backgroundcolorhome{
-    background-image: url("/Images/mountain.png");
-    background-size: contain ;
-    background-position-y: 500px;
-    background-repeat: no-repeat;
-    background-color: #A2DCED;
-}
-.header > .headermenu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 170px;
-    margin-inline: auto;
-}
-  
-
-} */
- @media only screen and (max-width: 950px){
-  .big-games{
-    width: 80vw;
-    grid-template-columns: repeat(5, 1fr);
-    height: auto;
-    display: grid;
-    margin-left: 5%;
-  }
-  .big-games-icons{
-    width: 300px;
-    height: 300px;
-    border-radius: 30px;
-    margin-bottom: 1rem;
-    box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
-    object-fit: cover;
-  }
-    .header {
-      height: 100px;
-      text-align: center;
-      background-color: #69C9E4;
-      color: #374043;
-      font-size: 35px;
-      display: flex;
-      font-family: Kdam;
-      text-shadow: 1px 0px #374043;
-      overflow: visible;
-    }
-    .hover-underline-animation {
-      display: inline-block;
-      position: relative;
-      color: #374043;
-      cursor: pointer;
-    }
-    
-    .hover-underline-animation::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 7px;
-      bottom: 0;
-      left: 0;
-      background-color: #649CAC;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-    
-    .hover-underline-animation:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-    #profilepic{
-      display: none;
-    }
-    #logo{
-      width: 270px;
-      margin-left: 20px;
-    }
-    
-  .backgroundcolorhome{
-      background-image: url("/Images/mountain.png");
-      background-size: contain ;
-      background-position-y: 500px;
-      background-repeat: no-repeat;
-      background-color: #A2DCED;
-  }
-  .header > .headermenu {
-    display: none;
-  }
-  
-
-}
-
-
-@media (max-width: 750px){
-  body{
-    margin: 0;
-    min-height: 250vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #E8F8FC;
-}
-  .big-games{
-  width: 90%;
-  grid-template-columns: repeat(2, 1fr);
-  height: auto;
-  display: grid;
-  margin-left: 5%;
-}
-.big-games-icons{
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  margin-bottom: 1rem;
-  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
-  object-fit: cover;
-}
-  .header {
-    height: 100px;
-    text-align: center;
-    background-color: #69C9E4;
-    color: #374043;
-    font-size: 35px;
-    display: flex;
-    font-family: Kdam;
-    text-shadow: 1px 0px #374043;
-    overflow: visible;
-  }
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #374043;
-    cursor: pointer;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 7px;
-    bottom: 0;
-    left: 0;
-    background-color: #649CAC;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  #profilepic{
-    display: none;
-  }
-  #logo{
-    max-width: 100%;
-    margin-left: 20px;
-    max-height: 70px;
-  }
-  
-.backgroundcolorhome{
-    background-image: url("/Images/mountain.png");
-    background-size: contain ;
-    background-position-y: 500px;
-    background-repeat: no-repeat;
-    background-color: #A2DCED;
-}
-.header > .headermenu {
-  display: none;
-}
-
-}
 
 
  .game-banner{
   background-color: #649CAC;
     height: 300px;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     grid-area: auto;
  }
@@ -629,7 +415,7 @@ body{
   height: 250px;
   width: 250px;
   border-radius: 25px;
-  margin: 2%;
+  margin-top: 2%;
   margin-left: 3%;
   box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
   object-fit: cover;
@@ -638,7 +424,7 @@ body{
 .game-name{
   color: white;
     text-align: center;
-   font-family: Karma;
+   font-family: Inter;
    font-size: 40px;
    z-index: 20;
   margin-left: 5rem;
@@ -647,7 +433,7 @@ body{
 .game-description-text{
   color: white;
     text-align: center;
-   font-family: Karma;
+   font-family: Inter;
    font-size: 15px;
    width: 750px;
    z-index: 20;
@@ -668,22 +454,22 @@ body{
 .user-name{
   color: white;
     text-align: center;
-   font-family: Karma;
+   font-family: Inter;
    font-size: 40px;
    z-index: 20;
 }
 .achievement-header{
   color: #374043;
-    font-family: LaoMuang;
+    font-family: Inter;
     font-size: 45px;
     text-align: center;
     text-shadow: 2px 2px white;
     margin: 20px;
+    margin-top: 2rem;
 }
 .playstation-logo{
   max-width: 90%;
-  left: 0;
-  right: 0;
+  place-self: center;
 }
 .ps-trophy-page{
   height: 19rem;
@@ -700,14 +486,200 @@ body{
   width: 50px;
   height: auto;
   margin-left: 1rem;
-  margin-top: 1rem;
-  
+  margin-top: 1rem; 
 }
 .achievement-text{
-  justify-content: space-between;
+  font-family: Inter;
 }
 .achievement {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.friend-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: auto;
+  max-width: 1300px;
+  gap: 3rem;
+  margin-top: 2rem;
+  opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 200px;
+    animation-range-end: cover 400px;
+}
+.friend-box{
+  max-width: 420px;
+  max-height: 193px;
+  background-color: #DAE6E9;
+  border-radius: 14px; 
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+}
+.friend-search-bar{
+  max-width: 700px;
+  max-height: 60px;
+  background-color: #DAE6E9;
+  margin-top: 4rem;
+  border-radius: 100px;
+  margin-left: 8rem;
+  display: flex;
+  box-shadow: inset 1px 1px 2px 0.5px rgb(55, 64, 67);
+}
+.friend-search-text{
+  font-family: Inter;
+  margin-left: 2rem;
+  font-size: 25px;
+  margin-top: 15px;
+  opacity: 50%;
+}
+#one-time-search-margin{
+  margin-bottom: 5rem;
+}
+.friend-icon{
+  width: 140px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.friend-name{
+  color: #374043;
+  font-family: Inter;
+  font-size: 32px;
+  width: 120px;
+  float: right;
+  margin-right: 6rem;
+}
+.friend-name-online-status{
+  color: #374043;
+  font-family: Inter;
+  font-size: 20px;
+  width: 180px;
+  float: right;
+  margin-right: 2.5rem;
+  margin-top: -4rem;
+}
+.forum-posts-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: auto;
+  max-width: 1300px;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.forum-posts{
+  max-width: 430px;
+  min-height: 225px;
+  background-color: #DAE6E9;
+  border-radius: 14px; 
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+  opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 200px;
+    animation-range-end: cover 500px;
+}
+.forum-post-header{
+  color: #374043;
+  font-family: Inter;
+  font-size: 24px;
+  max-width: 380px;
+  margin-left: 1rem;
+}
+.forum-posted-by{
+  color: #374043;
+  font-family: Inter;
+  font-size: 16px;
+  max-width: 380px;
+  margin-left: 1rem;
+}
+.forum-related-game{
+  color: #374043;
+  font-family: Inter;
+  font-size: 16px;
+  max-width: 380px;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  float: right;
+}
+.forum-game-icon{
+  float: right;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 12px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  opacity: 70%;
+  box-shadow: 2px 2px 5px 1px rgb(55, 64, 67);
+}
+.forum-game-icon:hover{
+  opacity: 100%;
+  transition: 0.5s;
+}
+.forum-header-intro{
+  color: #374043;
+  font-family: Inter;
+  font-size: 40px;
+  max-width: 380px;
+  margin-left: 8rem;
+}
+.game-guide-div{
+  background-color: #E8F8FC;
+  width: 90%;
+  align-self: center;
+  margin-top: 2rem;
+  border-radius: 25px;
+  box-shadow: 1px 2px 5px 1px rgb(55, 64, 67);
+  margin-bottom: 10rem;
+  opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 200px;
+    animation-range-end: cover 500px;
+}
+.game-achievement-icons{
+  width: 150px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  float: left;
+}
+.game-achievement-boxes{
+  width: 95%;
+  background-color: #DAE6E9;
+  margin:auto;
+  border-radius: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 182px;
+  opacity: 0;
+    transform: translateY(50%);
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover 100px;
+    animation-range-end: cover 300px;
+}
+.game-achievement-name-header{
+  color: #374043;
+  font-family: Inter;
+  font-size: 32px;
+  float: left;
+
+}
+.achievement-name-desc{
+  color: #374043;
+  font-family: Inter;
+  font-size: 20px;
+}
+.achievement-desc-div{
+  float: left;
+  margin-left: 4rem;
+  display: grid;
+}
+@media (max-width: 1250px) {
+
+}
+@media (max-width: 1250px) {
+
 }
